@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resource xmlns="http://www.wxwidgets.org/wxxrc">
+	<object class="wxFrame" name="NihongoFrame">
+		<title>Nihongo</title>
+		<centered>1</centered>
+		<icon>icon.bmp</icon>
+		<size>794,590</size>
+		<object class="wxHtmlWindow" name="ID_HTMLWINDOW1">
+			<pos>64,200</pos>
+		</object>
+	</object>
+</resource>

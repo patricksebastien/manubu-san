@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="mainApp.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="235" topLine="60" />
+	</File>
+	<File name="mainApp.h" open="0" top="0" tabpos="4">
+		<Cursor position="0" topLine="15" />
+	</File>
+	<File name="manabuApp.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="760" topLine="5" />
+	</File>
+	<File name="manabuApp.h" open="1" top="1" tabpos="5">
+		<Cursor position="394" topLine="1" />
+	</File>
+</CodeBlocks_layout_file>

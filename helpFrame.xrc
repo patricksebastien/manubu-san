@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resource xmlns="http://www.wxwidgets.org/wxxrc">
+	<object class="wxFrame" name="helpFrame">
+		<title>Help</title>
+		<centered>1</centered>
+		<icon>icon.bmp</icon>
+		<bg>#FFFFFF</bg>
+		<style>wxDEFAULT_DIALOG_STYLE</style>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<object class="wxStaticText" name="ID_STATICTEXT1">
+					<label>Help</label>
+					<font>
+						<size>24</size>
+						<style>normal</style>
+						<weight>normal</weight>
+						<underlined>0</underlined>
+						<family>swiss</family>
+					</font>
+				</object>
+				<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+			</object>
+			<object class="sizeritem">
+				<object class="wxHtmlWindow" name="ID_HTMLWINDOW1">
+					<htmlcode>&lt;b&gt;Shortkey:&lt;/b&gt;&lt;br&gt;&#x0A;Left: Next&lt;br&gt;&#x0A;Right: Previous&lt;br&gt;&lt;br&gt;&#x0A;1: Basic&lt;br&gt;&#x0A;2: Very often&lt;br&gt;&#x0A;3: Often&lt;br&gt;&#x0A;4: Rarely&lt;br&gt;&lt;br&gt;&#x0A;Ctrl+Q: Quit&#x0A;&lt;br&gt;&lt;br&gt;&#x0A;This software will remember his state when you quit it.</htmlcode>
+					<size>600,300</size>
+				</object>
+				<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+		</object>
+	</object>
+</resource>

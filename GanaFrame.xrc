@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resource xmlns="http://www.wxwidgets.org/wxxrc">
+	<object class="wxFrame" name="GanaFrame">
+		<title>Hiragana / Katakana</title>
+		<centered>1</centered>
+		<icon>icon.bmp</icon>
+		<size>684,568</size>
+		<style>wxDEFAULT_DIALOG_STYLE|wxFRAME_NO_TASKBAR</style>
+		<object class="wxStaticBitmap" name="ID_STATICBITMAP1">
+			<bitmap>kana.bmp</bitmap>
+			<pos>112,128</pos>
+			<size>684,568</size>
+		</object>
+	</object>
+</resource>

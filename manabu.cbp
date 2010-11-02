@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="manabu" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/manabu" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D__WXDEBUG__" />
+					<Add directory="$(WXWIN)/lib/gcc_dll/mswud" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(WXWIN)/lib/gcc_dll/mswud" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxmsw29ud.a" />
+					<Add library="libwxcode_msw29ud_wxsqlite3.a" />
+					<Add directory="$(WXWIN)/lib/gcc_dll" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/manabu" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(WXWIN)/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add directory="$(WXWIN)/lib/gcc_dll" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`wx-config --cflags`" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(WXWIN)/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="`wx-config --libs`" />
+			<Add library="libwxcode_gtk2u_wxsqlite3-2.9" />
+		</Linker>
+		<Unit filename="GanaFrame.cpp" />
+		<Unit filename="GanaFrame.h" />
+		<Unit filename="NihongoFrame.cpp" />
+		<Unit filename="NihongoFrame.h" />
+		<Unit filename="helpFrame.cpp" />
+		<Unit filename="helpFrame.h" />
+		<Unit filename="mainApp.cpp" />
+		<Unit filename="mainApp.h" />
+		<Unit filename="manabuApp.cpp" />
+		<Unit filename="manabuApp.h" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="manabuApp.cpp" main="main" init_handlers="necessary" language="CPP">
+					<load_resource file="main.xrc" />
+					<load_resource file="GanaFrame.xrc" />
+					<load_resource file="help.xrc" />
+					<load_resource file="helpFrame.xrc" />
+				</gui>
+				<resources>
+					<wxFrame wxs="wxsmith/mainApp.wxs" src="mainApp.cpp" hdr="mainApp.h" xrc="mainApp.xrc" name="mainApp" language="CPP" />
+					<wxFrame wxs="wxsmith/GanaFrame.wxs" src="GanaFrame.cpp" hdr="GanaFrame.h" xrc="GanaFrame.xrc" name="GanaFrame" language="CPP" />
+					<wxFrame wxs="wxsmith/helpFrame.wxs" src="helpFrame.cpp" hdr="helpFrame.h" xrc="helpFrame.xrc" name="helpFrame" language="CPP" />
+				</resources>
+			</wxsmith>
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
